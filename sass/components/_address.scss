@@ -23,3 +23,16 @@
   display: flex;
   padding-bottom: 9px;
 }
+
+.address,
+.address__contacts {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
+}

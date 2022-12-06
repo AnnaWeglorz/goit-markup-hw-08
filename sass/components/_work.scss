@@ -1,4 +1,15 @@
 .work__text {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.work__text {
   text-align: center;
   margin-bottom: 50px;
   font-family: 'Roboto';
@@ -6,6 +17,5 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
   letter-spacing: 0.03em;
 }

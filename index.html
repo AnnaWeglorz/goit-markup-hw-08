@@ -15,9 +15,28 @@
     <title>Studio</title>
   </head>
   <body>
-      <header class="navigation">
+     <header class="navigation">
+       <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
             <div class="navigation__container">
-              <a href="#" class="logo"
+              <a href="#" class="logo--primary"
                 ><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a
               >
               <nav>
@@ -131,7 +150,7 @@
           </li>
         </ul>
       </div>
-      </section> 
+      </section>
        <section class="section--top">
       <div class="container">
         <div class="work">
@@ -171,11 +190,29 @@
             <ul class="team">
               <li class="team__items">
                 <figure>
+                  <picture>
+                    <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/avatar-team-product-designer-desktop.jpg 1x, ./images/avatar-team-product-designer-desktop-2x.jpg 2x"
+                    type="image/jpg"
+                    />
+
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="./images/avatar-team-product-designer-tablet.jpg 1x, ./images/avatar-team-product-designer-tablet-2x.jpg 2x"
+                    type="image/jpg"
+                    />
+
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="./images/avatar-team-product-designer-mobile.jpg 1x, ./images/avatar-team-product-designer-mobile-2x.jpg 2x"
+                    type="image/jpg"
+                    />
                   <img
                     src="./images/avatar-team-product-designer.jpg"
-                    height="260"
                     alt="photo of John Doe"
                   />
+                </picture>
                   <figcaption class="figcaption">
                     <h3 class="team__text">John Doe</h3>
                     <p class="team__position">Product Designer</p>
@@ -206,11 +243,30 @@
               </li>
               <li class="team__items">
                 <figure>
+                  <picture>
+                    <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/avatar-team-frontend-developer-desktop.jpg 1x, ./images/avatar-team-frontend-developer-desktop-2x.jpg 2x"
+                    type="image/jpg"
+                    />
+
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="./images/avatar-team-frontend-developer-tablet.jpg 1x, ./images/avatar-team-frontend-developer-tablet-2x.jpg 2x"
+                    type="image/jpg"
+                    />
+
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="./images/avatar-team-frontend-developer-mobile.jpg 1x, ./images/avatar-team-frontend-developer-mobile-2x.jpg 2x"
+                    type="image/jpg"
+                    />
+
                   <img
                     src="./images/avatar-team-frontend-developer.jpg"
-                    height="260"
                     alt="photo of John Doe"
                   />
+                </picture>
                   <figcaption class="figcaption">
                     <h3 h3 class="team__text">John Doe</h3>
                     <p class="team__position">Frontend Developer</p>
@@ -241,7 +297,29 @@
               </li>
               <li class="team__items">
                 <figure>
-                  <img src="./images/avatar-team-marketing.jpg" height="260" alt="photo of John Doe" />
+                  <picture>
+                    <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/avatar-team-marketing-desktop.jpg 1x, ./images/avatar-team-marketing-desktop-2x.jpg 2x"
+                    type="image/jpg"
+                    />
+
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="./images/avatar-team-marketing-tablet.jpg 1x, ./images/avatar-team-marketing-tablet-2x.jpg 2x"
+                    type="image/jpg"
+                    />
+
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="./images/avatar-team-marketing-mobile.jpg 1x, ./images/avatar-team-marketing-mobile-2x.jpg 2x"
+                    type="image/jpg"
+                    />
+
+                  <img 
+                  src="./images/avatar-team-marketing.jpg" 
+                  alt="photo of John Doe" />
+                </picture>
                   <figcaption class="figcaption">
                     <h3 class="team__text">John Doe</h3>
                     <p class="team__position">Marketing</p>
@@ -272,11 +350,30 @@
               </li>
               <li class="team__items">
                 <figure>
+                  <picture>
+                    <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/avatar-team-ui-designer-desktop.jpg 1x, ./images/avatar-team-ui-designer-desktop-2x.jpg 2x"
+                    type="image/jpg"
+                    />
+
+                    <source
+                    media="(min-width: 768px)"
+                    srcset="./images/avatar-team-ui-designer-tablet.jpg 1x, ./images/avatar-team-ui-designer-tablet-2x.jpg 2x"
+                    type="image/jpg"
+                    />
+
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="./images/avatar-team-ui-designer-mobile.jpg 1x, ./images/avatar-team-ui-designer-mobile-2x.jpg 2x"
+                    type="image/jpg"
+                    />
+
                   <img
                     src="./images/avatar-team-ui-designer.jpg"
-                    height="260"
                     alt="photo of John Doe"
                   />
+                </picture>
                   <figcaption class="figcaption">
                     <h3 class="team__text">John Doe</h3>
                     <p class="team__position">UI Designer</p>
@@ -351,7 +448,7 @@
    <footer class="footer">
         <div class="container footer__container">
           <div>
-            <a href="#" class="logo"
+            <a href="#" class="logo--secondary"
               ><span class="logo__web">Web<span class="logo__studio--color">Studio</span></span></a
             >
             <address class="address">
@@ -388,7 +485,56 @@
             </div>
           </div>
         </div>
-      </footer> 
+      </footer>
+       <div class="menu-container js-menu-container" id="mobile-menu">
+           <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+         <ul class="mobile-menu-list">
+          <li class="mobile-menu-list__items"><a class="mobile-menu-list__items--link" href="./index.html" class="link">Agencja</a></li>
+          <li class="mobile-menu-list__items"><a class="mobile-menu-list__items--link" href="./portfolio.html" class="link">Portfolio</a></li>
+          <li class="mobile-menu-list__items"><a class="mobile-menu-list__items--link" href="" class="link">Kontakt</a></li>
+        </ul>
+                <ul class="mobile-contacts">
+                   <li class="mobile-contacts__item--primary">
+                    <a class="mobile-contacts__link--primary-link" href="telto:+48111111111"><svg class="contacts__icon" width="10" height="16"><use href="./images/icons.svg#icon-smartphone"></use></svg>+48 111 111 111</a>
+                  </li>
+                  <li class="mobile-contacts__item--secondary">
+                    <a class="mobile-contacts__link--secondary-link" href="mailto:info@devstudio.com">
+                    <svg class="mobile-contacts__icon" width="16" height="12"><use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+                  </li>
+                </ul>
+         <ul class="mobile-menu__social-list">
+          <li class="mobile-menu__social-list--primary"><a class="mobile-menu__social-list--link" href="#" class="link">Instagram</a></li>
+          <li class="mobile-menu__social-list--primary"><a class="mobile-menu__social-list--link" href="#" class="link">Twitter</a></li>
+          <li class="mobile-menu__social-list--primary"><a class="mobile-menu__social-list--link" href="#" class="link">Facebook</a></li>
+          <li class="mobile-menu__social-list--primary"><a class="mobile-menu__social-list--link" href="#" class="link">Linkedin</a></li>
+        </ul>
+        </div>
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+    </script>
+    <script src="js/mobile-menu.js"></script>
       <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"> </script>
   </body>
 </html>
