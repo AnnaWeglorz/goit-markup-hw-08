@@ -30,7 +30,9 @@
 }
 .customers__list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
+  align-items: center;
 }
 
 .customers__link {
