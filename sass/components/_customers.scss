@@ -1,8 +1,9 @@
 .customers__list {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and  (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  flex-direction: column;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -20,8 +21,6 @@
 .customers__text {
   text-align: center;
   margin-bottom: 50px;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -29,8 +28,6 @@
   letter-spacing: 0.03em;
 }
 .customers__list {
-  display: flex;
-  flex-direction: column;
   gap: 30px;
   align-items: center;
 }

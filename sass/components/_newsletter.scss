@@ -72,8 +72,8 @@
 }
 
 .newsletter__input {
-  @media screen and (min-width: 480px) {
-    width: 450px;
+  @media screen and (max-width:767px) {
+    width: 320px;
   }
 
   @media screen and (min-width: 768px) {
@@ -86,7 +86,7 @@
 }
 
 .newsletter__form {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width:767px) {
     display: block;
   }
 
@@ -100,7 +100,7 @@
 }
 
 .newsletter__button {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-inline: auto;
     margin-top: 20px;
   }

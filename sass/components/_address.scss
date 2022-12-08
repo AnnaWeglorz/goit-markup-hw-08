@@ -5,10 +5,10 @@
   letter-spacing: 0.03em;
   color: var(--button-font-color);
   font-style: normal;
-  max-width: 246px;
   flex-direction: row;
   padding-bottom: 9px;
-  padding-top: 20px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .address__contacts {
@@ -26,9 +26,10 @@
 
 .address,
 .address__contacts {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
